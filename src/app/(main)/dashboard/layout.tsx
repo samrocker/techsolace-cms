@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 
 export const metadata: Metadata = {
@@ -18,8 +18,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
           {children}
