@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../../styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
+import Applayout from "@/components/core/appLayout";
 
 export const metadata: Metadata = {
   title: "Techsolace CMS",
@@ -21,7 +22,7 @@ export default function RootLayout({
           defaultTheme="light"
           disableTransitionOnChange
         >
-          {children}
+          <Applayout>{children}</Applayout>
         </ThemeProvider>
       </body>
     </html>
